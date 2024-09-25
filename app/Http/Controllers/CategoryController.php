@@ -12,11 +12,13 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $categories = Category::all(['id','title','description']);
-        return response()->json($categories);
-    }
+ 
+public function index()
+{
+    $categories = Category::all(['id', 'title', 'description', 'status']);
+    return response()->json($categories);
+}
+
 
     /**
      * Store a newly created resource in storage.
@@ -24,14 +26,22 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $category = Category::create($request->post());
-        return response()->json([
-            'message'=>'Category Created Successfully!!',
-            'category'=>$category
-        ]);
-    }
+    
+public function store(Request $request)
+{
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'description' => 'required|string',
+        'status' => 'nullable|integer|in:0,1,2', // Validate status if provided
+    ]);
+
+    $category = Category::create($validated);
+    
+    return response()->json([
+        'message' => 'Task Created Successfully!!',
+        'category' => $category
+    ]);
+}
 
     /**
      * Display the specified resource.
@@ -51,15 +61,22 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
-    {
-        $category->fill($request->post())->save();
-        return response()->json([
-            'message'=>'Category Updated Successfully!!',
-            'category'=>$category
-        ]);
-    }
+   
+public function update(Request $request, Category $category)
+{
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'description' => 'required|string',
+        'status' => 'nullable|integer|in:0,1,2', // Validate status if provided
+    ]);
 
+    $category->fill($validated)->save();
+
+    return response()->json([
+        'message' => 'Task Updated Successfully!!',
+        'category' => $category
+    ]);
+}
     /**
      * Remove the specified resource from storage.
      *
@@ -70,7 +87,7 @@ class CategoryController extends Controller
     {
         $category->delete();
         return response()->json([
-            'message'=>'Category Deleted Successfully!!'
+            'message'=>'Task Deleted Successfully!!'
         ]);
     }
 }

@@ -1,22 +1,22 @@
-import { createApp } from "vue"; // Vue 3 uses createApp
+import { createApp } from "vue";
 import App from "./components/App.vue";
-import { createRouter, createWebHistory } from "vue-router"; // Vue Router 4 uses named exports
+import { createRouter, createWebHistory } from "vue-router";
 import VueAxios from "vue-axios";
 import axios from "axios";
 import { routes } from "./routes";
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css"; // Make sure the CSS is loaded
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-// Create the Vue app
 const app = createApp(App);
 
-// Create the router
 const router = createRouter({
     history: createWebHistory(),
     routes: routes,
 });
 
-// Use the router and axios plugins
 app.use(router);
 app.use(VueAxios, axios);
+app.use(Toast); // Ensure Toast plugin is initialized
 
-// Mount the app
 app.mount("#app");
