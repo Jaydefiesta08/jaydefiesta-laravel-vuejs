@@ -3,7 +3,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-primary" href="#">CyberSamurai</a>
+                <a class="navbar-brand text-primary" href="#">NexusNinjas</a>
 
                 <div class="collapse navbar-collapse">
                     <div class="navbar-nav">
@@ -29,7 +29,7 @@
             class="hero d-flex align-items-center justify-content-center text-center"
         >
             <div class="container">
-                <h1 class="text-primary">Welcome to CyberSamurai</h1>
+                <h1 class="text-primary">Welcome to NexusNinjas</h1>
                 <p class="lead text-secondary">Write. Plan. Achieve.</p>
             </div>
         </section>
@@ -37,7 +37,7 @@
         <!-- Features Section -->
         <section class="container my-5">
             <div class="text-center mb-4">
-                <h2 class="text-primary">What CyberSamurai Offers</h2>
+                <h2 class="text-primary">What NexusNinjas Offers</h2>
                 <p class="text-secondary">
                     Your ultimate platform for managing ideas, projects, and
                     content creation seamlessly.
@@ -60,7 +60,7 @@
                         <h3>Write & Create</h3>
                         <p>
                             Whether you're drafting a novel or planning a blog
-                            post, CyberSamurai helps you focus on what matters
+                            post, NexusNinjas helps you focus on what matters
                             most.
                         </p>
                     </div>
@@ -81,7 +81,7 @@
         <!-- How It Works Section -->
         <section class="container my-5">
             <div class="text-center mb-4">
-                <h2 class="text-primary">How CyberSamurai Works</h2>
+                <h2 class="text-primary">How NexusNinjas Works</h2>
                 <p class="text-secondary">
                     Simplifying your workflow, one step at a time.
                 </p>
@@ -124,7 +124,7 @@
         <footer class="text-center bg-dark text-white py-4">
             <div class="container">
                 <p>
-                    &copy; {{ new Date().getFullYear() }} CyberSamurai. All
+                    &copy; {{ new Date().getFullYear() }} NexusNinjas. All
                     rights reserved. Designed by CyberSamurai
                 </p>
                 <a href="#" class="text-light">Privacy Policy</a> |
