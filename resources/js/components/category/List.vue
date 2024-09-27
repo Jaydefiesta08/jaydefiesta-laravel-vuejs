@@ -6,7 +6,7 @@
             style="background-color: #343a40"
         >
             <div class="container">
-                <a class="navbar-brand text-light" href="#">CyberSamurai</a>
+                <a class="navbar-brand text-light" href="#">NexusNinjas</a>
                 <button
                     class="navbar-toggler"
                     type="button"
