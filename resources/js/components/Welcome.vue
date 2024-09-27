@@ -125,7 +125,7 @@
             <div class="container">
                 <p>
                     &copy; {{ new Date().getFullYear() }} NexusNinjas. All
-                    rights reserved. Designed by CyberSamurai
+                    rights reserved. Designed by NexusNinjas
                 </p>
                 <a href="#" class="text-light">Privacy Policy</a> |
                 <a href="#" class="text-light">Terms of Service</a>
