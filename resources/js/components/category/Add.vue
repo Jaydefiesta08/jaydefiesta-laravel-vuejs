@@ -6,7 +6,7 @@
             style="background-color: #343a40"
         >
             <div class="container">
-                <a class="navbar-brand text-light" href="#">todolist</a>
+                <a class="navbar-brand text-light" href="#">Virtual Vanguard</a>
                 <button
                     class="navbar-toggler"
                     type="button"
