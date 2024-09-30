@@ -6,7 +6,7 @@
             style="background-color: #343a40"
         >
             <div class="container">
-                <a class="navbar-brand text-light" href="#">NexusNinjas</a>
+                <a class="navbar-brand text-light" href="#">todolist</a>
                 <button
                     class="navbar-toggler"
                     type="button"
