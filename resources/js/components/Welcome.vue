@@ -3,7 +3,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-primary" href="#">todolist</a>
+                <a class="navbar-brand text-primary" href="#">Virtual Vanguard</a>
 
                 <div class="collapse navbar-collapse">
                     <div class="navbar-nav">
